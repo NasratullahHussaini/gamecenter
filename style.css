@@ -1,0 +1,281 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 0;
+  background: darkblue;
+  color: white;
+}
+
+header.main-header {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+}
+footer {
+  text-align: center;
+  background-color: rgb(107, 107, 235);
+  padding: 3vw;
+  color: white;
+  margin-top: 20%;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer section,
+.footer h2 {
+  margin-left: 15%;
+}
+#main-aside {
+  position: absolute;
+  right: 02%;
+  top: 19%;
+  background: rgb(69, 172, 103);
+  padding: 2vw;
+  color: white;
+}
+aside ul li {
+  margin-top: 6%;
+}
+aside ul li a {
+  text-decoration: none;
+  color: white;
+}
+.intro {
+  margin-left: 30%;
+}
+/*
+style for the section introduction 
+*/
+
+.myself {
+  width: 50%;
+  margin-left: 25%;
+  background: rgb(42, 45, 216);
+  padding: 2%;
+}
+.myself p {
+  line-height: 25px;
+  text-align: justify;
+}
+.myself p::first-line {
+  color: rgb(240, 116, 116);
+  font-weight: bold;
+}
+.navbar {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  text-align: center;
+  justify-content: center;
+
+  background: black;
+}
+.navbar a {
+  text-decoration: none;
+  margin-left: 13%;
+  color: white;
+  font-weight: bold;
+  padding: 1vw;
+}
+
+/* yv stands for youtube video and stv stands for stream video 
+*/
+.yv {
+  margin-left: 5%;
+}
+.stv {
+  margin-left: 35%;
+}
+.st {
+  margin-left: 6%;
+  margin-right: 61.5%;
+}
+.contact {
+  text-align: left;
+}
+section h5 {
+  font-weight: bold;
+}
+.introduc {
+  margin-left: 30%;
+  margin-right: 40%;
+  text-align: left;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 2px;
+  line-height: 20px;
+}
+.current {
+  background: blue;
+  color: white;
+}
+/*
+style for contact form
+*/
+section.form {
+  margin-left: 35%;
+  border: 1px white solid;
+  padding: 2%;
+  width: 30%;
+}
+section.form form label {
+  margin-top: 3%;
+}
+section.form form {
+  margin-top: 2%;
+}
+section.form form input {
+  padding: 0.5%;
+}
+section.form form textarea {
+  padding: 5%;
+  margin-bottom: 3%;
+}
+section.form form input[type="button"] {
+  padding: 2%;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+section.form form input[type="button"]:hover {
+  background: white;
+  color: blue;
+}
+header.main-header h1.transation {
+  font-style: italic;
+  margin-top: 0.8%;
+  position: relative;
+  animation-name: h1Animation;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+/*
+Anamation for subscribe button
+*/
+@keyframes movebutton {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}
+/*
+anamation and transation for header 
+*/
+
+@keyframes h1Animation {
+  0% {
+    color: white;
+    left: 5%;
+    top: 4%;
+  }
+  25% {
+    color: red;
+    left: 6%;
+    top: 5%;
+  }
+  50% {
+    color: yellow;
+    left: 5%;
+    top: 4%;
+  }
+  100% {
+    color: green;
+    left: 6%;
+    top: 5%;
+  }
+}
+/* 
+  responsive for divices with max 490px
+  */
+
+@media (max-width: 490px) {
+  header h1 {
+    font-size: 15px;
+  }
+  section.intro {
+    margin-left: 3%;
+  }
+  iframe {
+    width: 50%;
+    height: 50%;
+  }
+  #main-aside {
+    position: absolute;
+    right: 1%;
+    left: 60%;
+    top: 10%;
+    padding: 1vw;
+    font-size: 11px;
+  }
+  .myself {
+    width: 90%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    background: rgb(42, 45, 216);
+    padding: 2%;
+  }
+  .myself p {
+    line-height: 25px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer section,
+  .footer h2 {
+    margin-left: 15%;
+  }
+  section.form {
+    margin-left: 20%;
+    border: 1px white solid;
+    padding: 2%;
+    width: 50%;
+  }
+  section.form form label {
+    margin-top: 3%;
+  }
+  section.form form {
+    margin-top: 2%;
+  }
+  section.form form input {
+    padding: 0.5%;
+  }
+  section.form form textarea {
+    padding: 5%;
+    margin-bottom: 3%;
+  }
+  section.form form input[type="button"] {
+    padding: 2%;
+    background: black;
+    color: white;
+    cursor: pointer;
+  }
+  .yv {
+    margin-left: 15%;
+  }
+  .stv {
+    margin-left: 15%;
+  }
+  .st {
+    margin-right: 20%;
+  }
+}

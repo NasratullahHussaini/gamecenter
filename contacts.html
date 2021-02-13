@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="./index.html">HOME</a>
+
+      <a class="current" href="./contacts.html">CONTACTS</a>
+      <a href="./about.html">ABOUT</a>
+    </nav>
+    <header class="main-header">
+      <h1 class="transation">Welcome to my Website</h1>
+    </header>
+    <hr />
+    <!--main part of the web page-->
+    <main>
+      <section class="form">
+        <!--contact form-->
+        <form>
+          <label for="name">NAME</label><br />
+          <input type="text" name="name" placeholder="Enter your name" /><br />
+        </form>
+        <form>
+          <label for="EMAIL">EMAIL</label><br />
+          <input
+            type="text"
+            name="EMAIL"
+            placeholder="Enter your email"
+          /><br />
+        </form>
+        <form>
+          <label for="message">MESSAGE</label><br />
+          <textarea name="message" placeholder="Write your message"></textarea
+          ><br />
+          <input type="button" value="SUBMIT" />
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="contact">
+        <h5>Email: <span> hussaini.nasratullah@gmail.com </span></h5>
+        <h5>Phone Number: <span> 0465412320 </span></h5>
+        <h5>Address: <span> Lostraat 13 9000 Gent </span></h5>
+      </section>
+      <h2>&copy; Nasratullah Hussaini | 2020</h2>
+    </footer>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div
+      class="glitchButton"
+      style="position: fixed; top: 20px; right: 20px"
+    ></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>
